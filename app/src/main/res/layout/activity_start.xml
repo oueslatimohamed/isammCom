@@ -23,27 +23,31 @@
         android:textColor="@color/textColor"
         android:layout_gravity="center"
         android:layout_marginTop="230dp"/>
+
     <Button
+        android:id="@+id/connectez"
         android:layout_width="320dp"
         android:layout_height="60dp"
-        android:background="@drawable/button"
         android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/button"
         android:fontFamily="@font/montserrat"
         android:text="Se connecter"
-        android:textColor="@android:color/white"
-        android:textSize="18dp"
         android:textAllCaps="false"
-        android:layout_marginTop="60dp"/>
+        android:textColor="@android:color/white"
+        android:textSize="18dp" />
+
     <Button
+        android:id="@+id/inscrire"
         android:layout_width="320dp"
         android:layout_height="60dp"
-        android:background="@drawable/button_2"
         android:layout_gravity="center"
         android:layout_marginTop="24dp"
+        android:background="@drawable/button_2"
         android:fontFamily="@font/montserrat"
         android:text="S'inscrire"
-        android:textSize="18dp"
+        android:textAllCaps="false"
         android:textColor="@color/buttonColor"
-        android:textAllCaps="false"/>
+        android:textSize="18dp" />
 
 </LinearLayout>

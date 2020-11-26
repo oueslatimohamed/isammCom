@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">IsammCom</string>
+    <string name="connectez">Connectez À Votre Compte</string>
+    <string name="creez">Crèez Votre Compte</string>
+
 </resources>
