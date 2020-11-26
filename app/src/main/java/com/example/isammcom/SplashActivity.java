@@ -11,17 +11,17 @@ import android.widget.ImageView;
 
 public class SplashActivity extends AppCompatActivity {
     final int SPLASH_TIME_OUT = 5000;
-    Animation topanim ;
-    ImageView logo ;
+    Animation mTopAnim ;
+    ImageView mLogo ;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
 
         //Animation de logo
-        topanim = AnimationUtils.loadAnimation(this,R.anim.top_animation);
-        logo=findViewById(R.id.logo);
-        logo.setAnimation(topanim);
+        mTopAnim = AnimationUtils.loadAnimation(this,R.anim.top_animation);
+        mLogo=findViewById(R.id.logo);
+        mLogo.setAnimation(mTopAnim);
 
         new Handler().postDelayed(new Runnable() {
             @Override
