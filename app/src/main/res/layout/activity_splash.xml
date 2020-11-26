@@ -10,9 +10,9 @@
     tools:context=".SplashActivity">
 
     <ImageView
-        android:layout_height="50dp"
+        android:id="@+id/logo"
         android:layout_width="212dp"
-        android:src="@drawable/white"
-        />
+        android:layout_height="50dp"
+        android:src="@drawable/white" />
 
 </LinearLayout>
