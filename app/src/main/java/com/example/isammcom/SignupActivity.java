@@ -97,32 +97,34 @@ public class SignupActivity extends AppCompatActivity {
                                             String studid = firebaseUser.getUid();
 
                                             DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("Students").child(studid);
+                                            if(email.equals(firebaseUser.getEmail().toString())){
+                                                pd.dismiss();
+                                                Toast.makeText(SignupActivity.this , "email is already exist ",Toast.LENGTH_SHORT).show();
+                                            } else {
+                                                HashMap<String , Object> hashMap = new HashMap<>();
+                                                hashMap.put("id" , studid);
+                                                hashMap.put("fullname" , name);
+                                                hashMap.put("username" , username);
+                                                hashMap.put("email" , email);
+                                                hashMap.put("password" , password);
+                                                hashMap.put("bio" , "");
+                                                hashMap.put("image" , "https://firebasestorage.googleapis.com/v0/b/isammcom-a978c.appspot.com/o/avatar.png?alt=media&token=fb4b5693-eae3-48cb-8953-c5debd2305cc");
 
-                                            HashMap<String , Object> hashMap = new HashMap<>();
-                                            hashMap.put("id" , studid);
-                                            hashMap.put("fullname" , name);
-                                            hashMap.put("username" , username);
-                                            hashMap.put("email" , email);
-                                            hashMap.put("password" , password);
-                                            hashMap.put("bio" , "");
-                                            hashMap.put("image" , "https://firebasestorage.googleapis.com/v0/b/isammcom-a978c.appspot.com/o/avatar.png?alt=media&token=fb4b5693-eae3-48cb-8953-c5debd2305cc");
+                                                reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                                    @Override
+                                                    public void onComplete(@NonNull Task<Void> task) {
+                                                        if(task.isSuccessful()){
 
-                                            reference.setValue(hashMap).addOnCompleteListener(new OnCompleteListener<Void>() {
-                                                @Override
-                                                public void onComplete(@NonNull Task<Void> task) {
-                                                    if(task.isSuccessful()){
-                                                       if(email.equals(firebaseUser.getEmail().trim())){
-                                                           pd.dismiss();
-                                                           Toast.makeText(SignupActivity.this , "email is already exist ",Toast.LENGTH_SHORT).show();
-                                                       } else {
-                                                           pd.dismiss();
-                                                           Intent intent = new Intent(SignupActivity.this , LoginActivity.class);
-                                                           intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
-                                                           startActivity(intent);
-                                                       }
+                                                            pd.dismiss();
+                                                            Intent intent = new Intent(SignupActivity.this , LoginActivity.class);
+                                                            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
+                                                            startActivity(intent);
+
+                                                        }
                                                     }
-                                                }
-                                            });
+                                                });
+                                            }
+
                                         } else {
                                             pd.dismiss();
                                             Toast.makeText(SignupActivity.this , "email is already exist",Toast.LENGTH_SHORT).show();
