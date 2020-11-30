@@ -37,7 +37,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/nomprenom"
+            android:id="@+id/activity_signup_name"
             android:layout_width="320dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
@@ -51,7 +51,7 @@
             android:paddingLeft="20dp" />
 
         <EditText
-            android:id="@+id/nomutilisateur"
+            android:id="@+id/activity_signup_username"
             android:layout_width="320dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
@@ -65,7 +65,7 @@
             android:paddingLeft="20dp" />
 
         <EditText
-            android:id="@+id/email"
+            android:id="@+id/activity_signup_email"
             android:layout_width="320dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
@@ -79,7 +79,7 @@
             android:paddingLeft="20dp" />
 
         <EditText
-            android:id="@+id/motdepasse"
+            android:id="@+id/activity_signup_password"
             android:layout_width="320dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
@@ -93,7 +93,7 @@
             android:paddingLeft="20dp" />
 
         <Button
-            android:id="@+id/inscrire"
+            android:id="@+id/activity_signup_btnSign"
             android:layout_width="320dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
@@ -125,7 +125,7 @@
                 android:textSize="14sp" />
 
             <TextView
-                android:id="@+id/connectertv"
+                android:id="@+id/activity_signup_connectTV"
                 android:layout_width="52dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

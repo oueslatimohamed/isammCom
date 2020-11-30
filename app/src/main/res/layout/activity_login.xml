@@ -36,7 +36,7 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/nomprenom"
+            android:id="@+id/activity_login_email"
             android:layout_width="320dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
@@ -50,7 +50,7 @@
             android:paddingLeft="20dp" />
 
         <EditText
-            android:id="@+id/nomutilisateur"
+            android:id="@+id/activity_login_password"
             android:layout_width="320dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
@@ -77,7 +77,7 @@
             android:textSize="16dp" />
 
         <Button
-            android:id="@+id/inscrire"
+            android:id="@+id/activity_login_connectbtn"
             android:layout_width="320dp"
             android:layout_height="60dp"
             android:layout_gravity="center"
