@@ -74,7 +74,7 @@ public class LoginActivity extends AppCompatActivity {
                                                     startActivity(intent);
                                                 } else {
                                                     pd.dismiss();
-                                                    Toast.makeText(LoginActivity.this,"Verifiez votre addresse mail ..", Toast.LENGTH_SHORT).show();
+                                                    Toast.makeText(LoginActivity.this,"Verifiez votre adresse mail ..", Toast.LENGTH_SHORT).show();
                                                 }
                                             }
 
