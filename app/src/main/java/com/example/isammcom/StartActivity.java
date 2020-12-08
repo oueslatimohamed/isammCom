@@ -30,7 +30,7 @@ public class StartActivity extends AppCompatActivity {
         mSign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(StartActivity.this,SignupActivity.class));
+                startActivity(new Intent(StartActivity.this,MainActivity.class));
             }
         });
     }

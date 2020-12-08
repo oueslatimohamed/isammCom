@@ -2,5 +2,7 @@
     <string name="app_name">IsammCom</string>
     <string name="connectez">Connectez À Votre Compte</string>
     <string name="creez">Crèez Votre Compte</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
