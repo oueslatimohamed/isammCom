@@ -12,8 +12,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tools:targetApi="lollipop"
-            android:background="@drawable/dropshadow"
-            android:elevation="10dp">
+            android:background="@drawable/dropshadow2"
+            android:elevation="15dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -22,24 +22,24 @@
 
                 <ImageView
                     android:id="@+id/imageView4"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentStart="true"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginEnd="340dp"
-                    android:layout_marginRight="340dp"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="344dp"
+                    android:layout_marginRight="344dp"
                     android:src="@drawable/ic_login" />
 
                 <ImageView
                     android:id="@+id/imageView2"
-                    android:layout_width="211dp"
-                    android:layout_height="77dp"
+                    android:layout_width="209dp"
+                    android:layout_height="37dp"
                     android:layout_centerVertical="true"
                     android:layout_marginStart="85dp"
                     android:layout_marginLeft="85dp"
@@ -48,20 +48,34 @@
 
                 <ImageView
                     android:id="@+id/imageView3"
-                    android:layout_width="45dp"
-                    android:layout_height="45dp"
+                    android:layout_width="35dp"
+                    android:layout_height="wrap_content"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
                     android:layout_alignParentRight="true"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginEnd="18dp"
-                    android:layout_marginRight="18dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="37dp"
+                    android:layout_marginRight="37dp"
                     android:src="@drawable/ic_message" />
 
             </RelativeLayout>
 
 
         </Toolbar>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"/>
+
+
+
+
+
+
+
         
 
 
