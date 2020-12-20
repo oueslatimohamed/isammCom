@@ -17,7 +17,6 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseAuthUserCollisionException;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -97,10 +96,6 @@ public class SignupActivity extends AppCompatActivity {
                                             String studid = firebaseUser.getUid();
 
                                             DatabaseReference reference = FirebaseDatabase.getInstance().getReference().child("Students").child(studid);
-                                            if(email.equals(firebaseUser.getEmail().toString())){
-                                                pd.dismiss();
-                                                Toast.makeText(SignupActivity.this , "email is already exist ",Toast.LENGTH_SHORT).show();
-                                            } else {
                                                 HashMap<String , Object> hashMap = new HashMap<>();
                                                 hashMap.put("id" , studid);
                                                 hashMap.put("fullname" , name);
@@ -114,7 +109,6 @@ public class SignupActivity extends AppCompatActivity {
                                                     @Override
                                                     public void onComplete(@NonNull Task<Void> task) {
                                                         if(task.isSuccessful()){
-
                                                             pd.dismiss();
                                                             Intent intent = new Intent(SignupActivity.this , LoginActivity.class);
                                                             intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK | Intent.FLAG_ACTIVITY_NEW_TASK);
@@ -123,7 +117,6 @@ public class SignupActivity extends AppCompatActivity {
                                                         }
                                                     }
                                                 });
-                                            }
 
                                         } else {
                                             pd.dismiss();

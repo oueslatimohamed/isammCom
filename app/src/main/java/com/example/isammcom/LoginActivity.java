@@ -83,6 +83,9 @@ public class LoginActivity extends AppCompatActivity {
                                                 pd.dismiss();
                                             }
                                         });
+                                    } else {
+                                        pd.dismiss();
+                                        Toast.makeText(LoginActivity.this,"Ce compte n'existe pas...", Toast.LENGTH_SHORT).show();
                                     }
                                 }
                             });
