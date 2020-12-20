@@ -1,0 +1,40 @@
+Index: app/src/main/res/layout/fragment_home.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<RelativeLayout xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:app=\"http://schemas.android.com/apk/res-auto\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\"\r\n    android:layout_width=\"match_parent\"\r\n    android:layout_height=\"match_parent\"\r\n    tools:context=\".fragment.HomeFragment\">\r\n\r\n\r\n        <Toolbar\r\n            android:id=\"@+id/toolbar\"\r\n            android:layout_width=\"match_parent\"\r\n            android:layout_height=\"wrap_content\"\r\n            tools:targetApi=\"lollipop\"\r\n            android:background=\"@drawable/dropshadow2\"\r\n            android:elevation=\"15dp\">\r\n\r\n            <RelativeLayout\r\n                android:layout_width=\"match_parent\"\r\n                android:layout_height=\"wrap_content\" >\r\n\r\n\r\n                <ImageView\r\n                    android:id=\"@+id/imageView4\"\r\n                    android:layout_width=\"35dp\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:layout_alignParentStart=\"true\"\r\n                    android:layout_alignParentLeft=\"true\"\r\n                    android:layout_alignParentTop=\"true\"\r\n                    android:layout_alignParentEnd=\"true\"\r\n                    android:layout_alignParentRight=\"true\"\r\n                    android:layout_marginStart=\"17dp\"\r\n                    android:layout_marginLeft=\"17dp\"\r\n                    android:layout_marginTop=\"16dp\"\r\n                    android:layout_marginEnd=\"344dp\"\r\n                    android:layout_marginRight=\"344dp\"\r\n                    android:src=\"@drawable/ic_login\" />\r\n\r\n                <ImageView\r\n                    android:id=\"@+id/imageView2\"\r\n                    android:layout_width=\"209dp\"\r\n                    android:layout_height=\"37dp\"\r\n                    android:layout_centerVertical=\"true\"\r\n                    android:layout_marginStart=\"85dp\"\r\n                    android:layout_marginLeft=\"85dp\"\r\n                    android:layout_marginTop=\"15dp\"\r\n                    android:src=\"@drawable/blue\" />\r\n\r\n                <ImageView\r\n                    android:id=\"@+id/imageView3\"\r\n                    android:layout_width=\"35dp\"\r\n                    android:layout_height=\"wrap_content\"\r\n                    android:layout_alignParentTop=\"true\"\r\n                    android:layout_alignParentEnd=\"true\"\r\n                    android:layout_alignParentRight=\"true\"\r\n                    android:layout_marginTop=\"15dp\"\r\n                    android:layout_marginEnd=\"37dp\"\r\n                    android:layout_marginRight=\"37dp\"\r\n                    android:src=\"@drawable/ic_message\" />\r\n\r\n            </RelativeLayout>\r\n\r\n\r\n        </Toolbar>\r\n\r\n\r\n    <androidx.recyclerview.widget.RecyclerView\r\n        android:id=\"@+id/recyclerview\"\r\n        android:layout_width=\"match_parent\"\r\n        android:layout_height=\"wrap_content\"\r\n        android:layout_below=\"@id/toolbar\"/>\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n        \r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n</RelativeLayout>\r\n\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/res/layout/fragment_home.xml	(revision 5723c08c12e3c62670b7ba6314c39f79d623dcf5)
++++ app/src/main/res/layout/fragment_home.xml	(date 1607639075336)
+@@ -64,30 +64,5 @@
+         </Toolbar>
+ 
+ 
+-    <androidx.recyclerview.widget.RecyclerView
+-        android:id="@+id/recyclerview"
+-        android:layout_width="match_parent"
+-        android:layout_height="wrap_content"
+-        android:layout_below="@id/toolbar"/>
+-
+-
+-
+-
+-
+-
+-
+-        
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+ </RelativeLayout>
+ 
