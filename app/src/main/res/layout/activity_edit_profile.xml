@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".EditProfileActivity">
+
+    <Toolbar
+        android:id="@+id/toolbar_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/close_edit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_close"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Modifier le profile"
+                android:textStyle="bold"
+                android:fontFamily="@font/montserrat"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/close_edit_btn"/>
+            <TextView
+                android:id="@+id/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Eng"
+                android:textColor="@color/buttonColor"
+                android:fontFamily="@font/montserrat"
+                android:textStyle="bold"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true" />
+
+        </RelativeLayout>
+    </Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/image_profile_edit"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/img_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Changer votre photo"
+            android:textColor="@color/buttonColor"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"/>
+        <EditText
+            android:id="@+id/fullname_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="8dp"
+            android:elevation="5dp"
+            android:background="@drawable/dropshadow"
+            android:hint="Full name"
+            android:layout_marginTop="30dp"/>
+        <EditText
+            android:id="@+id/username_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="8dp"
+            android:elevation="5dp"
+            android:background="@drawable/dropshadow"
+            android:hint="Username"
+            android:layout_marginTop="20dp"/>
+        <EditText
+            android:id="@+id/bio_edit"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="8dp"
+            android:elevation="5dp"
+            android:background="@drawable/dropshadow"
+            android:hint="Bio"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

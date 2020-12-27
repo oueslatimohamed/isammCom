@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PostActivity">
+
+    <Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        android:ems="10">
+         <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+             <TextView
+                 android:id="@+id/post_txt"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="POST"
+                 android:textSize="18dp"
+                 android:textColor="@android:color/black"
+                 android:fontFamily="@font/montserrat"
+                 android:textStyle="bold"/>
+             <LinearLayout
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:gravity="right">
+                 <ImageView
+                     android:id="@+id/close"
+                     android:layout_width="30dp"
+                     android:layout_height="30dp"
+                     android:layout_marginRight="30dp"
+                     android:src="@drawable/ic_close" />
+             </LinearLayout>
+         </LinearLayout>
+
+    </Toolbar>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/post_added"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"/>
+
+        <EditText
+            android:id="@+id/descripition_text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/dropshadow"
+            android:layout_marginTop="15dp"
+            android:hint="Description"
+            android:maxLines="5"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

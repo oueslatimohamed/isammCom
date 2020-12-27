@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_profile_notif"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher"/>
+
+    <LinearLayout
+        android:id="@+id/contenaire"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/image_profile_notif"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/image_profile_notif">
+        <TextView
+            android:id="@+id/username_notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:fontFamily="@font/montserrat"
+            android:textStyle="bold"
+            android:textColor="@color/buttonColor"
+            />
+        <TextView
+            android:id="@+id/text_notif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text..."
+            android:fontFamily="@font/montserrat"
+            android:textColor="@android:color/black"/>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/post_image_notif"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:src="@mipmap/ic_launcher"
+        tools:ignore="UnknownId"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
